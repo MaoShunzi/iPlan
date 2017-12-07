@@ -96,7 +96,6 @@
 				TargetAttributes = {
 					187603C01FD539C900875601 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = ENBEBYQ8VR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,8 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ENBEBYQ8VR;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iPlan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nju.iPlan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,8 +276,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ENBEBYQ8VR;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iPlan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nju.iPlan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +305,7 @@
 				187603D51FD539C900875601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
