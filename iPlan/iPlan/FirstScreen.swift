@@ -8,8 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstScreen: UIViewController {
 
+    @IBOutlet weak var appLogoImage: UIImageView!
+    
+    @IBOutlet weak var appNameLabel: UILabel!
+    
+    @IBOutlet weak var appEnterButton: UIButton!
+    
+    @IBOutlet weak var appDeveloperLabel1: UILabel!
+    @IBOutlet weak var appDeveloperLabel2: UILabel!
+    @IBOutlet weak var appDeveloperLabel3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

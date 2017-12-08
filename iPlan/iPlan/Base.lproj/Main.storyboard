@@ -12,7 +12,7 @@
         <!--First Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="First Screen" id="BYZ-38-t0r" customClass="FirstScreen" sceneMemberID="viewController">
+                <viewController title="First Screen" id="BYZ-38-t0r" customClass="FirstScreen" customModule="iPlan" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,34 +21,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESo-6J-i9D" userLabel="App Name Label">
-                                <rect key="frame" x="148" y="241" width="79" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESo-6J-i9D" userLabel="App Name Label">
+                                <rect key="frame" x="149" y="254" width="78" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <color key="textColor" red="0.99957042932510376" green="0.51064378023147583" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsv-By-QgI">
-                                <rect key="frame" x="166" y="467" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsv-By-QgI">
+                                <rect key="frame" x="178" y="462" width="19" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPE-yW-PIV" userLabel="logo">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cdc-vr-FPn">
                                 <rect key="frame" x="67" y="79" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Haiyu Chen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95w-Hj-jAq" userLabel="Developer Label2">
-                                <rect key="frame" x="118" y="496" width="138" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CPE-yW-PIV" userLabel="App Logo Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="swR-1r-e4r"/>
+                                            <constraint firstAttribute="width" constant="240" id="tHM-Lf-ghy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haiyu Chen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95w-Hj-jAq" userLabel="Developer Label2">
+                                <rect key="frame" x="133" y="503" width="109" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNZ-Mj-y2N">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNZ-Mj-y2N">
+                                <rect key="frame" x="169" y="316" width="37" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="进入">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,16 +61,37 @@
                                     <segue destination="qid-dV-Aje" kind="show" id="WMI-Re-au3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shunzi Mao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-h5-8IL" userLabel="Developer Label1">
-                                <rect key="frame" x="118" y="419" width="138" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shunzi Mao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-h5-8IL" userLabel="Developer Label1">
+                                <rect key="frame" x="132" y="427" width="110" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cdc-vr-FPn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-190.5" id="5JV-Op-JPL"/>
+                            <constraint firstItem="tNZ-Mj-y2N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9P0-zt-Euk"/>
+                            <constraint firstItem="g2T-h5-8IL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dvp-sO-4UW"/>
+                            <constraint firstItem="g2T-h5-8IL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="105.5" id="Hjr-5r-xMS"/>
+                            <constraint firstItem="95w-Hj-jAq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vmx-29-khc"/>
+                            <constraint firstItem="xsv-By-QgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZkN-uW-8mZ"/>
+                            <constraint firstItem="ESo-6J-i9D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60.5" id="atG-IC-S0D"/>
+                            <constraint firstItem="95w-Hj-jAq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="181" id="bfi-7C-lnN"/>
+                            <constraint firstItem="ESo-6J-i9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d5o-JB-9Tr"/>
+                            <constraint firstItem="tNZ-Mj-y2N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hvQ-Ln-kuw"/>
+                            <constraint firstItem="xsv-By-QgI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="144" id="oaL-PJ-zPA"/>
+                            <constraint firstItem="Cdc-vr-FPn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x0D-BI-LaA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appDeveloperLabel1" destination="g2T-h5-8IL" id="YGy-vX-OhF"/>
+                        <outlet property="appDeveloperLabel2" destination="xsv-By-QgI" id="UHH-4h-7jt"/>
+                        <outlet property="appDeveloperLabel3" destination="95w-Hj-jAq" id="KkV-eT-ML9"/>
+                        <outlet property="appEnterButton" destination="tNZ-Mj-y2N" id="2km-Ar-0pb"/>
+                        <outlet property="appLogoImage" destination="CPE-yW-PIV" id="6Xs-6f-KKe"/>
+                        <outlet property="appNameLabel" destination="ESo-6J-i9D" id="qU4-8e-kPu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +114,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nQ-nd-Xfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1567" y="918"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="D5k-Cb-wHe">
+            <objects>
+                <navigationController id="OKT-fc-dW0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PPl-7b-rln"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FH0-f8-ABd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqQ-uP-mgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="-198"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="Rzb-qI-t0c">
@@ -156,7 +195,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lsk-lq-0Aw">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="lsk-lq-0Aw">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="119"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -200,6 +239,7 @@
                     <connections>
                         <segue destination="v05-UD-MDT" kind="relationship" relationship="viewControllers" id="Com-8s-BEH"/>
                         <segue destination="7wj-Jr-DWJ" kind="relationship" relationship="viewControllers" id="yEU-si-Qrw"/>
+                        <segue destination="OKT-fc-dW0" kind="relationship" relationship="viewControllers" id="CnD-0o-Efs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjv-31-0nm" userLabel="First Responder" sceneMemberID="firstResponder"/>
